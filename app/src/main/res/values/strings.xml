@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LabTrabajadores</string>
+    <string name="textoSeleccion">Seleccionar Tipo Trabajador</string>
+    <string name="textoTrabajadorHora">Trabajador por hora</string>
+    <string name="textoTrabajadorCompleto">Trabajador tiempo completo</string>
+    <string name="textoBtnSiguiente">Siguiente</string>
+</resources>
