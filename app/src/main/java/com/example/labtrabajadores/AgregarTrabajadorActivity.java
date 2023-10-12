@@ -19,7 +19,6 @@ import com.example.labtrabajadores.models.TrabajadorTiempoCompleto;
 public class AgregarTrabajadorActivity extends AppCompatActivity {
     Button btnAgregar;
     EditText edtSalario, edtCodigo, edtNombre, edtApellido, edtEdad, edtValor, edtHora;
-    TextView tvSalario, tvCodigo, tvNombre, tvApellido, tvEdad, tvValor, tvHora;
     private Bundle bundle;
     private int idEleccion;
 
@@ -38,23 +37,16 @@ public class AgregarTrabajadorActivity extends AppCompatActivity {
         edtValor = findViewById(R.id.edtValor);
         edtHora = findViewById(R.id.edtHora);
 
-        tvSalario = findViewById(R.id.tvSalario);
-        tvValor = findViewById(R.id.tvValor);
-        tvHora= findViewById(R.id.tvHora);
-
         bundle = getIntent().getExtras();
         idEleccion = bundle.getInt("tipoEleccion");
 
         if(idEleccion == 1){
             // Es Trabajador hora
-            tvSalario.setVisibility(View.GONE);
             edtSalario.setVisibility(View.GONE);
 
         }else{
             // Es tiempo completo
-            tvValor.setVisibility(View.GONE);
             edtValor.setVisibility(View.GONE);
-            tvHora.setVisibility(View.GONE);
             edtHora.setVisibility(View.GONE);
 
         }
